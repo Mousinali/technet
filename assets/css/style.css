@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Black.woff2') format('woff2'),
+        url('../fonts/Aileron-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Bold.woff2') format('woff2'),
+        url('../fonts/Aileron-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Heavy.woff2') format('woff2'),
+        url('../fonts/Aileron-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Light.woff2') format('woff2'),
+        url('../fonts/Aileron-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Regular.woff2') format('woff2'),
+        url('../fonts/Aileron-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-SemiBold.woff2') format('woff2'),
+        url('../fonts/Aileron-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-Thin.woff2') format('woff2'),
+        url('../fonts/Aileron-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('../fonts/Aileron-UltraLight.woff2') format('woff2'),
+        url('../fonts/Aileron-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --primary-color: #167FC1;
+    --secondary-color: 069983;
+    --white-color: #ffffff;
+    --my-font: 'Aileron', sans-serif;
+}
+
+*,
+html{
+    box-sizing: border-box;
+   
+}
+body {
+     font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+.my-font {
+    font-family: var(--my-font) !important;
+}
+.primary-color {
+    color: var(--primary-color);
+}
