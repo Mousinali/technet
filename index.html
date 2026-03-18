@@ -136,7 +136,7 @@
     </header>
 
     <!-- Overlay done-->
-    <div id="overlay" class="fixed inset-0 bg-black/40 opacity-0 invisible transition-all duration-300 z-[9998]"></div>
+    <div id="overlay" class="fixed backdrop-blur-sm inset-0 bg-black/50 opacity-0 invisible transition-all duration-300 z-[9998]"></div>
 
 
     <!-- Mobile Menu -->
@@ -222,7 +222,7 @@
     </div>
 
     <!-- HERO -->
-    <section class="bg-[#F8FAFF] relative py-10 sm:py-14 overflow-hidden">
+    <section class="bg-[#F8FAFF] hero relative py-10 sm:py-14 overflow-hidden">
         <div
             class="bg-[#FFCC00] opacity-10 blur-[800px] w-[700px] h-[700px] rounded-full absolute -top-20 -left-60 pointer-events-none">
         </div>
@@ -235,7 +235,7 @@
             <div class="text-center md:max-w-3xl lg:max-w-4xl mx-auto sm:px-8">
 
                 <h1
-                    class="text-[1.9rem] sm:text-[2.35rem] md:text-[2.5rem] my-font lg:text-5xl font-semibold leading-[44px] sm:!leading-[48px] md:!leading-[52px] lg:!leading-[60px]">
+                    class="text-[1.9rem] split-text left sm:text-[2.35rem] md:text-[2.5rem] my-font lg:text-5xl font-semibold leading-[44px] sm:!leading-[48px] md:!leading-[52px] lg:!leading-[60px]">
                     Upgrade Your Knowledge with Modern
                     <span class="text-[var(--primary-color)] font-bold"> Industry-Focused Courses.</span>
                 </h1>
@@ -271,15 +271,15 @@
 
 
                 <!-- BUTTONS -->
-                <div class="flex flex-col sm:flex-row justify-center gap-6 mt-8">
+                <div class="flex hero-btn flex-col sm:flex-row justify-center gap-6 mt-8">
                     <button class="relative bg-[#167FC1] text-white font-semibold px-8 py-3 rounded-[3px]
   shadow-[6px_6px_0_#0e4f73] active:shadow-[1px_1px_0_#0e4f73]
-  active:translate-y-[4px] transition-all duration-150">
+  active:translate-y-[4px] transition-all duration-150 inline-block">
                         Book Your Demo Class
                     </button>
                     <button class="relative bg-[#F39421] text-white font-semibold px-8 py-3 rounded-[3px]
   shadow-[6px_6px_0_#945100] active:shadow-[1px_1px_0_#945100]
-  active:translate-y-[4px] transition-all duration-150">
+  active:translate-y-[4px] transition-all duration-150 inline-block">
                         Explore All Courses
                     </button>
 
@@ -543,7 +543,7 @@
     </section>
 
     <!-- ENQUIRY FORM -->
-    <section class="relative py-20 overflow-hidden my-font">
+    <section class="relative py-5 sm:py-20 overflow-hidden my-font">
         <div
             class="absolute inset-0 bg-[url('assets/images/hero/overlay.png')] bg-cover bg-center bg-no-repeat pointer-events-none z-10">
         </div>
@@ -1330,7 +1330,7 @@ shadow-[0_4px_0_#0e4f73] active:translate-y-1 active:shadow-none transition ">
 
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300">
                         <div class="px-5 pb-5 text-gray-500 leading-relaxed ">
-                            Yes, Tecnet provides career guidance and placement assistance.
+                            Yes, Growth Skill provides career guidance and placement assistance.
                         </div>
                     </div>
 
@@ -1668,10 +1668,12 @@ shadow-[0_4px_0_#0e4f73] active:translate-y-1 active:shadow-none transition ">
 
 
 
-    <script src="assets/libs/jquery/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
+    <script src="assets/libs/gsap.js"></script>
+    <script src="assets/libs/scrollTrigger.js"></script>
+    <script src="assets/libs/splitText.js"></script>
     <script src="assets/js/script.js"></script>
-    <!-- LENIS + MENU SCRIPT -->
     <script>
         // Init Lenis
         const lenis = new Lenis({
@@ -1712,7 +1714,6 @@ shadow-[0_4px_0_#0e4f73] active:translate-y-1 active:shadow-none transition ">
             lenis.start(); // 🔥 resume scroll
         }
     </script>
-
     <script>
         document.querySelectorAll('.faq-toggle').forEach(toggle => {
             toggle.addEventListener('click', () => {
