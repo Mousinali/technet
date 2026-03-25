@@ -72,15 +72,18 @@
                                 class="absolute left-0 top-10 min-w-64 bg-white shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform scale-95 group-hover:scale-100 border border-gray-200 z-10 overflow-hidden pb-2 pt-1">
                                 <li>
                                     <a href="ui-ux-course.html"
-                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Professional UI/UX Design Course</a>
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Professional
+                                        UI/UX Design Course (6 months)</a>
                                 </li>
                                 <li>
                                     <a href="agmd.html"
-                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Advanced Graphics & Motion Design Pro</a>
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Advanced
+                                        Graphics & Motion Design Pro (1 Year)</a>
                                 </li>
                                 <li>
                                     <a href="digital-marketing.html"
-                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Digital Marketing Course</a>
+                                        class="block text-sm px-4 py-[6px] text-gray-700 hover:text-[var(--secondary-color)] hover:bg-slate-100 transition-all">Digital
+                                        Marketing Course</a>
                                 </li>
                             </ul>
                         </li>
@@ -171,7 +174,7 @@
                     <a href="index.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Home</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
 
@@ -179,23 +182,61 @@
                     <a href="about-us.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">About Us</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
 
+                <!-- COURSES DROPDOWN -->
                 <li>
-                    <a href="course.html"
-                        class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
+                    <button
+                        class="dropdown-toggle w-full flex items-center justify-between px-3 py-1.5 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Courses</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
-                    </a>
+                        <!-- Changed to a down arrow for the dropdown indicator -->
+                        <i class="ri-arrow-down-s-line text-lg transition-transform duration-300"></i>
+                    </button>
+
+                    <!-- Collapsible Submenu -->
+                    <ul
+                        class="submenu max-h-0 overflow-hidden transition-[max-height] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] flex flex-col mt-1 space-y-1">
+
+                        <li>
+                            <a href="ui-ux-course.html"
+                                class="flex items-start relative gap-2.5 py-2 pl-4 pr-3 text-sm font-medium text-gray-600 hover:text-[#167FC1] hover:bg-blue-50/50 rounded-lg hover:translate-x-1 transition-all group">
+                                <!-- Small Blue Dot -->
+                                <span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#167FC1] opacity-70 absolute top-[14.5px] left-4 group-hover:opacity-100 group-hover:scale-125 transition-all"></span>
+                                <span class="pl-4">Professional UI/UX Design Course (6 months)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="agmd.html"
+                                class="flex items-start relative gap-2.5 py-2 pl-4 pr-3 text-sm font-medium text-gray-600 hover:text-[#167FC1] hover:bg-blue-50/50 rounded-lg hover:translate-x-1 transition-all group">
+                                <!-- Small Blue Dot -->
+                                <span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#167FC1] opacity-70 absolute top-[14.5px] left-4 group-hover:opacity-100 group-hover:scale-125 transition-all"></span>
+                                <span class="pl-4">Advanced Graphics & Motion Design Pro (1 Year)</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="digital-marketing.html"
+                                class="flex items-start relative gap-2.5 py-2 pl-4 pr-3 text-sm font-medium text-gray-600 hover:text-[#167FC1] hover:bg-blue-50/50 rounded-lg hover:translate-x-1 transition-all group">
+                                <!-- Small Blue Dot -->
+                                <span
+                                    class="w-1.5 h-1.5 rounded-full bg-[#167FC1] opacity-70 absolute top-[14.5px] left-4 group-hover:opacity-100 group-hover:scale-125 transition-all"></span>
+                                <span class="pl-4">Digital Marketing Course</span>
+                            </a>
+                        </li>
+
+                    </ul>
                 </li>
 
                 <li>
                     <a href="faculty.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Faculty</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
 
@@ -203,7 +244,7 @@
                     <a href="gallery.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Gallery</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
 
@@ -211,7 +252,7 @@
                     <a href="blogs.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Blogs</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
 
@@ -219,11 +260,34 @@
                     <a href="contact-us.html"
                         class="flex items-center justify-between px-3 py-3 rounded-xl text-gray-800 hover:bg-blue-50 hover:text-[#167FC1] transition">
                         <span class="font-medium">Contact Us</span>
-                        <i class="ri-arrow-right-s-line text-lg"></i>
+
                     </a>
                 </li>
             </ul>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
+
+                dropdownToggles.forEach(button => {
+                    button.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const submenu = this.nextElementSibling;
+                        const icon = this.querySelector('i');
+
+                        // Rotate arrow icon
+                        icon.classList.toggle('rotate-180');
+
+                        // Toggle height
+                        if (submenu.style.maxHeight) {
+                            submenu.style.maxHeight = null;
+                        } else {
+                            submenu.style.maxHeight = submenu.scrollHeight + "px";
+                        }
+                    });
+                });
+            });
+        </script>
 
         <!-- Bottom Button -->
         <div class="p-5 border-t border-gray-100">
@@ -1616,20 +1680,20 @@ shadow-[0_4px_0_#0e4f73] active:translate-y-1 active:shadow-none transition ">
                         <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
                                 <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Home</a></li>
 
-                        <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
+                        <li><a href="about.html" class="flex items-start gap-2 hover:text-white transition">
                                 <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> About Us</a></li>
 
-                        <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
+                        <li><a href="course.html" class="flex items-start gap-2 hover:text-white transition">
                                 <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Courses</a></li>
 
-                        <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
+                        <li><a href="faculty.html" class="flex items-start gap-2 hover:text-white transition">
                                 <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Faculty</a></li>
 
-                        <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
+                        <li><a href="gallery.html" class="flex items-start gap-2 hover:text-white transition">
                                 <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Gallery</a></li>
 
-                        <li><a href="#" class="flex items-start gap-2 hover:text-white transition">
-                                <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Blog</a></li>
+                        <li><a href="blogs.html" class="flex items-start gap-2 hover:text-white transition">
+                                <i class="ri-checkbox-blank-circle-fill text-[6px]"></i> Blogs</a></li>
 
                     </ul>
 
@@ -1734,7 +1798,8 @@ shadow-[0_4px_0_#0e4f73] active:translate-y-1 active:shadow-none transition ">
                 class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center text-sm text-gray-200 text-center md:text-left">
 
                 <p>© 2026 Growth Skill. <span>|</span>
-                    <a href="https://www.turaingrp.com/" target="_blank" class="hover:text-white mx-1">Part of Turain Group</a>
+                    <a href="https://www.turaingrp.com/" target="_blank" class="hover:text-white mx-1">Part of Turain
+                        Group</a>
                     <span>|</span> All Rights Reserved.
                 </p>
 
